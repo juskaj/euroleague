@@ -1,0 +1,42 @@
+.side-bar{
+    position: sticky;
+    top: 80px;
+    width: 0;
+    height: 100%;
+    transition-duration: 0.2s;
+}
+
+.side-bar >*{
+    display: none;
+}
+
+.side-bar-active{
+    top: 80px;
+    position: sticky;
+    background-color: white;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition-duration: 0.2s;
+}
+
+.side-bar-active >*{
+    height: 50px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    line-height: 50px;
+}
+
+.side-bar-active > *:hover{
+    background-color: orange;
+    color: white;
+}
